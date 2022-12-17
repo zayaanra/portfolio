@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Mukta-Regular";
+  src: local("Mukta-Regular"),
+  url("./fonts/Mukta-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
