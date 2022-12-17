@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 const styles = {
     container: {
         display: "flex",
@@ -5,24 +7,23 @@ const styles = {
         justifyContent: "center"
         
     },
-    header: {
+    button: {
         fontFamily: "Mukta-Regular",
         fontSize: 20,
-        color: 'white'
-    }
+        backgroundColor: "#151414",
+        color: 'white',
+        borderColor: "white",
+        borderWidth: 0,
+        borderRadius: 100,
+        padding: 20
+    },
 }
-
-//const button = 
 
 export default function Home() {
     return (
         <section style={styles.container}>
-            <div style={styles.header}>
-                <p>
-                    contact projects
-                </p>
-                <p>sd</p>
-            </div>
+            <button style={styles.button} type="button" >contact</button>
+            <button style={styles.button} type="button">projects</button>
         </section>
     )
 }
