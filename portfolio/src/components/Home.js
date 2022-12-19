@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import me from '../images/me.jpg'
 
 const styles = {
@@ -44,7 +45,9 @@ const styles = {
         textAlign: "center"
     }
 }
-            
+
+//<p style={styles.description}>I'm Zayaan. <br/>I am an aspiring software engineer with interests<br/>in web development, computer security,<br/>and operating systems.</p> 
+
 export default function Home() {
     return (
         <section>
@@ -56,7 +59,7 @@ export default function Home() {
                 <img style={styles.image} src={me} alt="Zayaan Rahman"/>
             </section>
             <section style={styles.container}>
-                <p style={styles.description}>I'm Zayaan. <br/>I am an aspiring software engineer with interests<br/>in web development, computer security,<br/>and operating systems.</p>       
+                <TypeAnimation sequence={["I'm Zayaan. I am an aspiring software engineer with interests in web development, cybersecurity, and operating systems."]} cursor={false} style={styles.description}/>    
             </section>
         </section>
     )
